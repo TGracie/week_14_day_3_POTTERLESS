@@ -23,7 +23,7 @@ ul{
   list-style-type: none;
 }
 
-.container {
+body {
   background-image: url('./images/original.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,7 +44,18 @@ ul{
 }
 
 button{
-  margin-top: 20px;
+  margin: 20px 8px 4px 8px;
   font: 1.2em arial, sans-serif;
   padding: 2em;
+  border-radius: 0.8em;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+button:hover{
+  background-color: white;
+}
+
+.dropdown{
+  text-align: center;
+  margin-top: 15px;
 }

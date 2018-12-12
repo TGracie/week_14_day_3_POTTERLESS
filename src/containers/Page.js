@@ -58,18 +58,22 @@ export default class Page extends Component{
   render(){
     return(
       <div className="container">
+
         <div className="filters">
           <button id="0" onClick={this.getAll}>All Characters</button>
           <button id="1" onClick={this.getStudents}>Students</button>
           <button id="2" onClick={this.getStaff}>Staff</button>
         </div>
-        <select className="dropdown" id="house-select" defaultValue="default" onChange={this.handleChange}>
-         <option value="default">Choose a house....</option>
-          <option value="Gryffindor">Gryffindor</option>
-          <option value="Ravenclaw">Ravenclaw</option>
-          <option value="Hufflepuff">Hufflepuff</option>
-          <option value="Slytherin">Slytherin</option>
-        </select>
+
+        <div className="dropdown">
+          <select id="house-select" defaultValue="default" onChange={this.handleChange}>
+           <option value="default">Choose a house....</option>
+            <option value="Gryffindor">Gryffindor</option>
+            <option value="Ravenclaw">Ravenclaw</option>
+            <option value="Hufflepuff">Hufflepuff</option>
+            <option value="Slytherin">Slytherin</option>
+          </select>
+        </div>
         <CharacterList characters={this.state.characters} house={this.state.house}/>
       </div>
     )
