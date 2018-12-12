@@ -5,7 +5,7 @@ const CharacterList = (props) => {
   if(props.characters == null || props.characters.length === 0){
     return <p>LOADING..... HURRY UP!!!</p>
   }
-
+  console.log("House?", props.house);
   return (
     // So drop down of houses
     // limits the data being passed in to the map
