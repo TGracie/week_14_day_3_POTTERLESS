@@ -5,15 +5,23 @@ const CharacterList = (props) => {
   if(props.characters == null || props.characters.length === 0){
     return <p>LOADING..... HURRY UP!!!</p>
   }
-  console.log("House?", props.house);
+  let people = [];
+
+  if(props.house == null || props.house == "default"){
+   people = props.characters;
+  }else{
+   props.characters.forEach((character) => {
+     if(character.house === props.house){
+       people.push(character);
+     }
+   })
+ }
+
   return (
-    // So drop down of houses
-    // limits the data being passed in to the map
-    //SIMPLE
     <>
-    <h2>Characters</h2>
+    <h2 className="character-heading">Characters</h2>
     <div className="character-list">
-    {props.characters.map((character, index) => {
+    {people.map((character, index) => {
       return (
         <Profile
         key={index}

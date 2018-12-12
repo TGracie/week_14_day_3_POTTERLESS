@@ -1,12 +1,17 @@
 .profile {
   border: 3px solid black;
+  border-radius: 1em;
   text-align: center;
+  font: 1.3em arial, sans-serif;
+  background-color: rgb(255, 255, 255, 0.5);
 }
 
 .character-list{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1em;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .image {
@@ -16,4 +21,30 @@
 
 ul{
   list-style-type: none;
+}
+
+.container {
+  background-image: url('./images/original.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.filters {
+  text-align: center;
+}
+
+.character-heading{
+  border: 3px solid black;
+  border-radius: 1em;
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.5);
+  width: 50%;
+  margin-left: 25%;
+}
+
+button{
+  margin-top: 20px;
+  font: 1.2em arial, sans-serif;
+  padding: 2em;
 }

@@ -63,8 +63,8 @@ export default class Page extends Component{
           <button id="1" onClick={this.getStudents}>Students</button>
           <button id="2" onClick={this.getStaff}>Staff</button>
         </div>
-        <select id="house-select" defaultValue="default" onChange={this.handleChange}>
-         <option disabled value="default">Choose a house....</option>
+        <select className="dropdown" id="house-select" defaultValue="default" onChange={this.handleChange}>
+         <option value="default">Choose a house....</option>
           <option value="Gryffindor">Gryffindor</option>
           <option value="Ravenclaw">Ravenclaw</option>
           <option value="Hufflepuff">Hufflepuff</option>
