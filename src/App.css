@@ -1,1 +1,19 @@
+.profile {
+  border: 3px solid black;
+  text-align: center;
+}
 
+.character-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.image {
+  width: auto;
+  height: 200px;
+}
+
+ul{
+  list-style-type: none;
+}
